@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Filmer CRUD</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+  </head>
+
+  <body class="bg-light">
+    <main class="container py-4">
+      <h1 class="mb-3">Filmer</h1>
+
+      <div id="msg" class="alert d-none" role="alert"></div>
+
+      <section class="card p-3 mb-3">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <h2 class="h5 m-0">Lägg till eller ändra</h2>
+          <button id="clearBtn" class="btn btn-outline-secondary btn-sm" type="button">Rensa</button>
+        </div>
+
+        <form id="movieForm" class="row g-2">
+          <input type="hidden" id="editId" />
+
+          <div class="col-12 col-md-5">
+            <input id="title" class="form-control" placeholder="Titel" required />
+          </div>
+
+          <div class="col-6 col-md-2">
+            <input id="year" type="number" class="form-control" placeholder="År" required />
+          </div>
+
+          <div class="col-6 col-md-2">
+            <input id="rating" type="number" min="1" max="10" class="form-control" placeholder="Betyg 1-10" required />
+          </div>
+
+          <div class="col-12 col-md-2">
+            <input id="color" class="form-control" placeholder="Färg" required />
+          </div>
+
+          <div class="col-12 col-md-1 d-grid">
+            <button class="btn btn-primary" type="submit">Spara</button>
+          </div>
+        </form>
+      </section>
+
+      <section id="listArea"></section>
+    </main>
+  </body>
+</html>
