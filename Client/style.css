@@ -6,8 +6,8 @@
 body {
   margin: 0;
   font-family: system-ui, Arial, sans-serif;
-  background-color: #f3f4f6;
-  color: #111827;
+  background-color: #3f70d1;
+  color: #081c3f;
 }
 
 body::before {
@@ -60,7 +60,7 @@ main.container {
 
 
 form {
-  background-color: #f9fafb;
+  background-color: #468cd3;
   padding: 32px;
   border-radius: 16px;
   box-shadow: inset 0 0 0 1px #e5e7eb;
@@ -95,24 +95,21 @@ input::placeholder {
 form button {
   width: 100%;
   margin-top: 16px;
+  background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+  background-size: cover;
 }
 
 #listArea .card {
   border: none;
   border-radius: 20px;
-  padding: 28px;
-  background-image: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.95),
-    rgba(243,244,246,0.95)
-  );
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  padding: 22px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 #listArea .card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 22px 22px rgba(0, 0, 0, 0.22);
 }
 
 .card .fw-semibold {
@@ -123,13 +120,7 @@ form button {
   font-size: 0.85rem;
 }
 
-.badge {
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-}
-
 #listArea .btn {
   min-width: 100px;
-  border-radius: 12px;
+  border-radius: 120px;
 }
