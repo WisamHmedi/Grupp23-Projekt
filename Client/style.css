@@ -1,0 +1,135 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+  background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+.navbar {
+  background: transparent !important;
+  border: none;
+  padding: 32px 0;
+}
+
+.navbar .container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff !important;
+}
+
+.navbar .text-muted {
+  color: #dbeafe !important;
+  font-size: 1rem;
+}
+
+main.container {
+  background-color: #ffffff;
+  margin-top: 180px;
+  padding: 48px;
+  border-radius: 22px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+.row {
+  row-gap: 32px;
+}
+
+
+form {
+  background-color: #f9fafb;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: inset 0 0 0 1px #e5e7eb;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+input {
+  border-radius: 12px;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1e40af;
+}
+
+form button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+#listArea .card {
+  border: none;
+  border-radius: 20px;
+  padding: 28px;
+  background-image: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.95),
+    rgba(243,244,246,0.95)
+  );
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#listArea .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.28);
+}
+
+.card .fw-semibold {
+  font-size: 1.15rem;
+}
+
+.card .text-muted {
+  font-size: 0.85rem;
+}
+
+.badge {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+#listArea .btn {
+  min-width: 100px;
+  border-radius: 12px;
+}
